@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-const useModal = () => {
-  const [showModal, setModal] = useState(false);
+var useModal = function useModal() {
+  var _useState = useState(false),
+      showModal = _useState[0],
+      setModal = _useState[1];
 
-  const Toggle = () => setModal(!showModal);
+  var Toggle = function Toggle() {
+    return setModal(!showModal);
+  };
 
   return {
-    showModal,
-    Toggle
+    showModal: showModal,
+    Toggle: Toggle
   };
 };
 
@@ -27677,21 +27681,20 @@ if (process.env.NODE_ENV === 'production') {
 }
 });
 
-var styles = {"test":"_styles-module__test__3ybTi","modalContainer":"_styles-module__modalContainer__PH6f8","modal":"_styles-module__modal__Xt-75","modal_header":"_styles-module__modal_header__35hYB","modal_header_title":"_styles-module__modal_header_title__2W22A","close":"_styles-module__close__2I1sI","disabled":"_styles-module__disabled__2RWmX","modal_content":"_styles-module__modal_content__3ylpw","modal_footer":"_styles-module__modal_footer__VkeXY","modal_close":"_styles-module__modal_close__2hQHz","submit":"_styles-module__submit__doaMD","primary":"_styles-module__primary__3ljpl","red":"_styles-module__red__3nWpX"};
+var styles = {"test":"_3ybTi","modalContainer":"_PH6f8","modal":"_Xt-75","modal_header":"_35hYB","modal_header_title":"_2W22A","close":"_2I1sI","disabled":"_2RWmX","modal_content":"_3ylpw","modal_footer":"_VkeXY","modal_close":"_2hQHz","submit":"_doaMD","primary":"_3ljpl","red":"_3nWpX"};
 
-const Modal = ({
-  show,
-  close,
-  title,
-  children
-}) => {
-  useEffect(() => {
-    return window.addEventListener('keyup', e => {
+var Modal = function Modal(_ref) {
+  var show = _ref.show,
+      close = _ref.close,
+      title = _ref.title,
+      children = _ref.children;
+  useEffect(function () {
+    return window.addEventListener('keyup', function (e) {
       closeModalEvent(e);
     });
   });
 
-  const closeModalEvent = e => {
+  var closeModalEvent = function closeModalEvent(e) {
     if (e.key === 'Escape') {
       close();
     }
@@ -27699,10 +27702,14 @@ const Modal = ({
 
   return reactDom.createPortal(show ? /*#__PURE__*/React.createElement("div", {
     className: styles.modalContainer,
-    onClick: () => close()
+    onClick: function onClick() {
+      return close();
+    }
   }, /*#__PURE__*/React.createElement("div", {
     className: styles.modal,
-    onClick: e => e.stopPropagation()
+    onClick: function onClick(e) {
+      return e.stopPropagation();
+    }
   }, /*#__PURE__*/React.createElement("header", {
     className: styles.modal_header
   }, /*#__PURE__*/React.createElement("h2", {
@@ -27711,7 +27718,9 @@ const Modal = ({
     type: "button",
     className: styles.close,
     "data-dismiss": "modal",
-    onClick: () => close(),
+    onClick: function onClick() {
+      return close();
+    },
     "aria-label": "Close"
   }, /*#__PURE__*/React.createElement("span", {
     "aria-hidden": "true"
@@ -27723,7 +27732,9 @@ const Modal = ({
     type: "button",
     className: styles.modal_close,
     "aria-label": "Close",
-    onClick: () => close()
+    onClick: function onClick() {
+      return close();
+    }
   }, "Cancel")))) : null, document.getElementById("modal"));
 };
 

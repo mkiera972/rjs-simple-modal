@@ -1,6 +1,6 @@
 /* add css module styles here (optional) */
 
-._styles-module__test__3ybTi {
+._3ybTi {
   margin: 2em;
   padding: 0.5em;
   border: 2px solid #000;
@@ -9,7 +9,7 @@
 }
 
 
-._styles-module__modalContainer__PH6f8{
+._PH6f8{
   position: fixed;
   top: 0;
   bottom: 0;
@@ -18,8 +18,10 @@
   background-color: rgba(0, 0, 0, 0.35);
   display: flex;
   justify-content: center;
-  align-items: center; }
-  ._styles-module__modalContainer__PH6f8 ._styles-module__modal__Xt-75{
+  align-items: center; 
+  z-index: 1;
+  }
+  ._PH6f8 ._Xt-75{
     width: 30vw;
     height: auto;
     background-color: #fff;
@@ -28,16 +30,16 @@
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2); }
 
     @media (max-width: 992px) {
-      ._styles-module__modalContainer__PH6f8 ._styles-module__modal__Xt-75 {
+      ._PH6f8 ._Xt-75 {
         width: 80%; } }
-    ._styles-module__modalContainer__PH6f8 ._styles-module__modal_header__35hYB {
+    ._PH6f8 ._35hYB {
       position: relative;
       border-bottom: 1px solid #dddddd; }
-      ._styles-module__modalContainer__PH6f8 ._styles-module__modal_header_title__2W22A {
+      ._PH6f8 ._2W22A {
         text-align: center; }
-      ._styles-module__modalContainer__PH6f8 ._styles-module__modal_header__35hYB ._styles-module__close__2I1sI:not(:disabled):not(._styles-module__disabled__2RWmX) {
+      ._PH6f8 ._35hYB ._2I1sI:not(:disabled):not(._2RWmX) {
         cursor: pointer; }
-      ._styles-module__modalContainer__PH6f8 ._styles-module__modal_header__35hYB ._styles-module__close__2I1sI {
+      ._PH6f8 ._35hYB ._2I1sI {
         position: absolute;
         top: 0;
         right: 0;
@@ -52,17 +54,17 @@
         border: 0;
         -webkit-appearance: none; }
 
-    ._styles-module__modalContainer__PH6f8 ._styles-module__modal_content__3ylpw {
+    ._PH6f8 ._3ylpw {
       border-bottom: 1px solid #dddddd;
       padding: 2rem 0; }
-    ._styles-module__modalContainer__PH6f8 ._styles-module__modal_footer__VkeXY {
+    ._PH6f8 ._VkeXY {
       padding: 2rem 0;
       padding-bottom: 0; }
-      ._styles-module__modalContainer__PH6f8 ._styles-module__modal_footer__VkeXY button {
+      ._PH6f8 ._VkeXY button {
         float: right;
         padding: 0.5rem;
         border-radius: 8px; }
-        ._styles-module__modalContainer__PH6f8 ._styles-module__modal_footer__VkeXY ._styles-module__modal_close__2hQHz {
+        ._PH6f8 ._VkeXY ._2hQHz {
         display: inline-block;
         font-weight: 400;
         text-align: center;
@@ -81,20 +83,20 @@
         background-color: #007bff;
         border-color: #007bff; 
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
-        ._styles-module__modalContainer__PH6f8 ._styles-module__modal_footer__VkeXY ._styles-module__modal_close__2hQHz:hover {
+        ._PH6f8 ._VkeXY ._2hQHz:hover {
           cursor: pointer; }
-      ._styles-module__modalContainer__PH6f8 ._styles-module__modal_footer__VkeXY ._styles-module__submit__doaMD {
+      ._PH6f8 ._VkeXY ._doaMD {
         margin-right: 1rem;
         background-color: #364348;
         color: #fff; }
-      ._styles-module__modalContainer__PH6f8 ._styles-module__modal_footer__VkeXY ._styles-module__submit__doaMD:hover {
+      ._PH6f8 ._VkeXY ._doaMD:hover {
         background-color: rgba(54, 67, 72, 0.8); }
   
 
-._styles-module__primary__3ljpl{
+._3ljpl{
   color: #fff;
   background-color: #007bff;
   border-color: #007bff; }
 
-._styles-module__red__3nWpX {
+._3nWpX {
   background-color: red; }
